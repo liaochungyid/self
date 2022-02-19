@@ -30,6 +30,7 @@
 .a {
   padding: 3rem 0.5rem 0;
   position: relative;
+  color: var(--color);
 }
 
 .a::after {
@@ -54,4 +55,16 @@
   display: inline-block;
   opacity: 0.75;
   font-size: 4.75rem;
+  color: var(--color);
+  transform: translateY(-2.5rem);
+}
+
+.img {
+  width: 528px;
+  height: 772px;
+  background-size: contain;
+  position: absolute;
+  right: 0;
+  top: 0;
+  mix-blend-mode: multiply;
 }

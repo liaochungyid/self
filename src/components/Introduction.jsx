@@ -1,25 +1,21 @@
 import classes from './introduction.module.css'
-import { FaMedium, FaLinkedin, FaFacebookSquare, FaBlogger } from "react-icons/fa"
-import { GoMarkGithub } from "react-icons/go"
-// import { useContext } from "react"
-// import ResumeContext from "../store/resume-context"
+import { FaMedium, FaLinkedin, FaFacebookSquare, FaBlogger, FaGithubSquare } from "react-icons/fa"
 
-function Introduction() {
-  // const resumeCtx = useContext(ResumeContext)
-  // console.log(resumeCtx)
+function Introduction(props) {
   return (
     <div className={classes.introduction}>
       <h1 className={classes.h1}>
         I'm a <span className={classes.span}>Fullstack Developer</span><br />
         Welcome <br />
-        to contact, <a className={classes.a}>here to email me</a>
+        to contact, <a className={classes.a} target="_blank" href="mailto:liaochungyid@gmail.com">here to email me</a>
       </h1>
       <div>
-        <a className={classes.icon}><FaLinkedin /></a>
-        <a className={classes.icon}><GoMarkGithub /></a>
-        <a className={classes.icon}><FaFacebookSquare /></a>
-        <a className={classes.icon}><FaMedium /></a>
-        <a className={classes.icon}><FaBlogger /></a>
+        <img className={classes.img} src="https://i.imgur.com/vU6Hba8.jpg?1" alt="selfie" />
+        <a className={classes.icon} target="_blank" href={props.link.Linkedin} ><FaLinkedin /></a>
+        <a className={classes.icon} target="_blank" href={props.link.Github}><FaGithubSquare /></a>
+        <a className={classes.icon} target="_blank" href={props.link.Facebook}><FaFacebookSquare /></a>
+        <a className={classes.icon} target="_blank" href={props.link.Medium}><FaMedium /></a>
+        <a className={classes.icon} target="_blank" href={props.link.Learning}><FaBlogger /></a>
       </div>
     </div>
   )

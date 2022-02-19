@@ -1,0 +1,13 @@
+.skillContainer {
+  padding: 8rem 0;
+}
+
+.span {
+  color: var(--btn-red);
+  margin: 1rem 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  line-height: 4.2rem;
+  border-radius: 4px;
+  background-color: var(--btn-gray);
+}

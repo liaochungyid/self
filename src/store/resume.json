@@ -27,7 +27,7 @@
   "skill": {
     "main": ["HTML/CSS", "JavaScript", "TypeScript", "Node.js", "Git", "MySQL", "MongoDB", "GraphQL", "docker"],
     "framework": ["Express", "React"],
-    "other": ["RESTful Api", "MVC", "Oauth", "ES6"]
+    "other": ["GCP", "RESTful Api", "MVC", "Oauth", "ES6"]
   },
   "project": [
     {
