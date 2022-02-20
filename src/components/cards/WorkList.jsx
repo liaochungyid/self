@@ -1,5 +1,3 @@
-import { FaPlay } from "react-icons/fa"
-import { Link } from 'react-router-dom'
 import classes from './workList.module.css'
 
 function WorkList(props) {

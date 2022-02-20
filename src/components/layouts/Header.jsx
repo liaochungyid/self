@@ -31,7 +31,7 @@ function Header() {
         <button type='button'></button>
       </div>
       <div className={classes.navbar}>
-        <Link className={addActiveClass(classes.navLink, '/')} to='/'>Home</Link>
+        <Link className={addActiveClass(classes.navLink, '/self')} to='/self'>Home</Link>
         <Link className={addActiveClass(classes.navLink, '/work')} to='/work'>Work</Link>
         <Link className={addActiveClass(classes.navLink, '/profile')} to='profile'>Profile</Link>
         <a className={classes.navLink} href={resumeCtx.resume['Cake Resume']} target='_blank'>Resume</a>
