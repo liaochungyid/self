@@ -20,6 +20,9 @@ function HomePage () {
         selfIntro={resumeCtx.selfIntro}
         resume={resumeCtx.resume}
       />
+      <div className="homeFootImg">
+        <img src="https://i.imgur.com/iG8QUx8.jpg" alt="foot image" />
+      </div>
     </section>
   )
 }

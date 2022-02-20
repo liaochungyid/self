@@ -1,0 +1,7 @@
+.icon {
+  display: inline-block;
+  opacity: 0.75;
+  font-size: 4.75rem;
+  color: var(--color);
+  transform: translateY(-2.5rem);
+}

@@ -27,4 +27,5 @@
   background-color: var(--color);
   color: var(--background);
   opacity: 0.5;
+  font-size: 3rem;
 }

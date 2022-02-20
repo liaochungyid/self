@@ -1,5 +1,6 @@
 import classes from './introduction.module.css'
-import { FaMedium, FaLinkedin, FaFacebookSquare, FaBlogger, FaGithubSquare, FaPlay } from "react-icons/fa"
+import { FaPlay } from "react-icons/fa"
+import SocialMediaLink from './SocialMediaLink'
 
 function Introduction(props) {
   return (
@@ -11,11 +12,7 @@ function Introduction(props) {
       </h1>
       <div>
         <img className={classes.img} src="https://i.imgur.com/vU6Hba8.jpg?1" alt="selfie" />
-        <a className={classes.icon} target="_blank" href={props.link.Linkedin} ><FaLinkedin /></a>
-        <a className={classes.icon} target="_blank" href={props.link.Github}><FaGithubSquare /></a>
-        <a className={classes.icon} target="_blank" href={props.link.Facebook}><FaFacebookSquare /></a>
-        <a className={classes.icon} target="_blank" href={props.link.Medium}><FaMedium /></a>
-        <a className={classes.icon} target="_blank" href={props.link.Learning}><FaBlogger /></a>
+        <SocialMediaLink link={props.link}/>
       </div>
     </div>
   )

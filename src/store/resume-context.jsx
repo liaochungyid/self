@@ -24,7 +24,7 @@ const ResumeContext = createContext({
       position: "應用科學",
       description: "同級第一名畢業",
       order: 1,
-      extend: false
+      extend: {image: "https://i.imgur.com/2Kw3IdJl.jpg"}
     },
     {
       place: "Cranfield University",
@@ -121,7 +121,7 @@ const ResumeContext = createContext({
         position: "海軍輪機軍官",
         description: "曾赴美接艦，期間負責輪機料配件採購與專案進度推進",
         order: 2,
-        extend: "ExperienceExtend"
+        extend: false
       },
       {
         place: "大乃綠循環科技",
@@ -135,7 +135,7 @@ const ResumeContext = createContext({
         place: "華志營造",
         year: "Mar. 2021 - Nov. 2021",
         position: "現場工程師",
-        description: "擔任廠務規劃、環保能源計畫送審經理，組織團隊於6個月內完成環保判定，並取得再生能源設施設置許可證",
+        description: "於台電大潭電廠新建員工宿舍與活動中心擔任現場工程師，負責裝修詳圖繪製、送審、監工",
         order: 5,
         extend: false
       }
@@ -144,10 +144,10 @@ const ResumeContext = createContext({
       {
         place: "ALPHA Camp 線上學習",
         year: "Mar. 2021 - Dec. 2021",
-        position: "Fullstack Developer (Backend Specialization)",
+        position: "Fullstack Developer (Specialize in Back-end)",
         description: "運用下班時間自主學習",
         order: 6,
-        extend: "LearningExtend"
+        extend: {url: "https://global.turingcerts.com/co/cert?hash=d8e5c68f34d6c0409524e05de2419295bcb29fe1c06e8bd0e135b9891d04a2fa"}
       }
     ]
   }
