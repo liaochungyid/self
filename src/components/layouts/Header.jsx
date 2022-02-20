@@ -1,7 +1,26 @@
 import { Link } from 'react-router-dom'
 import classes from './header.module.css'
+import { useContext, useState, useEffect } from "react"
+import ResumeContext from "../../store/resume-context"
+import { useLocation } from 'react-router-dom'
 
 function Header() {
+  const resumeCtx = useContext(ResumeContext)
+  const [pathnameState, setPathnameState] = useState('')
+  let location = useLocation()
+
+  useEffect(() => {
+    setPathnameState(location.pathname)
+  }, [location])
+
+  function addActiveClass(addOn, pathname) {
+    if (pathnameState === pathname) {
+      return [addOn, classes.active].join(' ')
+    } else {
+      return addOn
+    }
+  }
+
   return (
     <header>
       <div className={classes.title}>
@@ -12,11 +31,10 @@ function Header() {
         <button type='button'></button>
       </div>
       <div className={classes.navbar}>
-        <Link className={classes.navLink} to='/work'>Work</Link>
-        <Link className={classes.navLink} to='profile'>Profile</Link>
-        <Link className={classes.navLink} to='experience'>Experience</Link>
-        <Link className={classes.navLink} to='/'>Resume</Link>
-        <Link className={classes.navLink} to='/'>Contact</Link>
+        <Link className={addActiveClass(classes.navLink, '/')} to='/'>Home</Link>
+        <Link className={addActiveClass(classes.navLink, '/work')} to='/work'>Work</Link>
+        <Link className={addActiveClass(classes.navLink, '/profile')} to='profile'>Profile</Link>
+        <a className={classes.navLink} href={resumeCtx.resume['Cake Resume']} target='_blank'>Resume</a>
       </div>
     </header>
   )

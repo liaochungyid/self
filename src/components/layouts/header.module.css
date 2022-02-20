@@ -22,3 +22,9 @@
   background-color: var(--color);
   color: var(--background);
 }
+
+.navLink.active {
+  background-color: var(--color);
+  color: var(--background);
+  opacity: 0.5;
+}

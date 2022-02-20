@@ -1,0 +1,87 @@
+.project {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 8rem;
+  gap: 4rem;
+}
+
+.card {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 2rem;
+  position: relative;
+}
+
+.card::after {
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  content: "";
+  width: 60%;
+  height: 1px;
+  background-color: var(--btn-red);
+}
+
+.card img {
+  width: 50%;
+  max-width: 400px;
+  background-size: contain;
+}
+
+.card > div {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 0 0;
+}
+
+.card div h2 {
+  font-size: 2rem;
+}
+
+.card div p {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+
+.card div ul {
+  flex: 1 0 0;
+}
+
+.card div li {
+  list-style: square inside;
+  font-size: 1.2rem;
+}
+
+.card div div {
+  padding: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+
+.card div div a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0 1.2rem;
+  margin: 0 1.2rem;
+  color: var(--btn-gray);
+  background-color: var(--btn-black);
+}
+
+.card div div a:hover {
+  background-color: var(--btn-gray);
+  color: var(--btn-black);
+}
+
+.project .navLink {
+  font-size: 4.75rem;
+  color: black;
+  align-self: flex-end;
+}
+
+.project .navLink:hover {
+  color: var(--background);
+  background-color: black;
+  opacity: 1;
+  border-radius: 2px;
+}

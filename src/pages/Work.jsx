@@ -1,6 +1,14 @@
+import { useContext } from "react"
+import ResumeContext from "../store/resume-context"
+import WorkList from "../components/cards/WorkList"
+
 function WorkPage () {
+  const resumeCtx = useContext(ResumeContext)
+
   return (
-    <h1>Work page</h1>
+    <div>
+      <WorkList project={resumeCtx.project} />  
+    </div>
   )
 }
 

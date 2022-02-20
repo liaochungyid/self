@@ -1,0 +1,111 @@
+.profile {
+  padding: 8rem 0;
+  width: 100%;
+  font-size: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.intro {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  text-align: end;
+}
+
+.intro a {
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+  background-color: var(--btn-gray);
+  color: var(--btn-black);
+}
+
+.intro a:hover {
+  background-color: var(--btn-black);
+  color: var(--btn-gray);
+  opacity: 1;
+}
+
+.intro::before {
+  content: "";
+  height: 1px;
+  display: block;
+  width: 50%;
+  background-color: var(--btn-red);
+  margin-bottom: 1rem;
+}
+
+.intro::after {
+  content: "";
+  height: 1px;
+  display: block;
+  width: 50%;
+  background-color: var(--btn-red);
+}
+
+.eduOrExp {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.eduOrExp div {
+  margin: 1rem 3rem;
+  position: relative;
+}
+
+.eduOrExp div::before {
+  content: "";
+  position: absolute;
+  bottom: -2rem;
+  left: -0.5rem;
+  height: 120%;
+  width: 2px;
+  display: block;
+  background-color: var(--btn-red);
+}
+
+.eduOrExp div::after {
+  content: "";
+  position: absolute;
+  bottom: -1.5rem;
+  right: -0.5rem;
+  height: 8px;
+  width: 8px;
+  display: block;
+  background-color: var(--btn-red);
+}
+
+.eduOrExp::after {
+  content: "";
+  height: 1px;
+  display: block;
+  width: 100%;
+  background-color: var(--btn-red);
+}
+
+.eduOrExp div h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 4rem;
+}
+
+.eduOrExp div h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+.profile .navLink {
+  font-size: 4.75rem;
+  color: black;
+  align-self: flex-end;
+}
+
+.profile .navLink:hover {
+  color: var(--background);
+  background-color: black;
+  opacity: 1;
+  border-radius: 2px;
+}
