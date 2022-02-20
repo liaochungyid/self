@@ -55,7 +55,8 @@
 }
 
 .project .card div a {
-  font-size: 1.2rem;
+  color: black;
+  font-size: 1.5rem;
   font-weight: 700;
   padding: 0 0 0 1.2rem;
 }
@@ -63,7 +64,7 @@
 .project .navLink {
   font-size: 4.75rem;
   color: black;
-  align-self:flex-end;
+  align-self: flex-end;
 }
 
 .project .navLink:hover {

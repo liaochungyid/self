@@ -8,7 +8,7 @@ function Project(props) {
   }
 
   function ProjectLinkList(props) {
-    return <a href={props.address}>{props.name}</a>
+    return <a href={props.address} target="_blank">{props.name}</a>
   }
 
   function ProjectCard(props) {
@@ -21,7 +21,7 @@ function Project(props) {
           {props.item.features.map(feature => <ProjectFeatureList feature={feature} key={feature}/>)}
         </ul>
         <div>
-          {Object.keys(props.item.links).map(key => <ProjectLinkList name={key} address={props.item.links.key} key={key}/>)}
+          {Object.keys(props.item.links).map(key => <ProjectLinkList name={key} address={props.item.links[key]} key={key}/>)}
         </div>
       </div>
     )

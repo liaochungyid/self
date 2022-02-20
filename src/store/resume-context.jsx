@@ -38,7 +38,7 @@ const ResumeContext = createContext({
   skill: {
     main: ["HTML/CSS", "JavaScript", "TypeScript", "Node.js", "Git", "MySQL", "MongoDB", "GraphQL", "Docker"],
     framework: ["Express", "React"],
-    other: ["RESTful Api", "MVC", "Oauth", "ES6"]
+    other: ["GCP", "RESTful Api", "MVC", "Oauth", "ES6"]
   },
   project: [
     {
@@ -52,7 +52,7 @@ const ResumeContext = createContext({
         "使用 Docker Container"
       ],
       links: {
-          "Git": "https://github.com/liaochungyid/demo-gcp"
+          Git: "https://github.com/liaochungyid/demo-gcp"
       }
     },
     {
