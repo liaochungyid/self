@@ -11,8 +11,8 @@ function App() {
       <Header />
       <Routes>
         <Route path='/self' element={<HomePage />} />
-        <Route path='/work' element={<WorkPage />} />
-        <Route path='/profile' element={<ProfilePage />} />
+        <Route path='/self/work' element={<WorkPage />} />
+        <Route path='/self/profile' element={<ProfilePage />} />
       </Routes>
     </div>
   )

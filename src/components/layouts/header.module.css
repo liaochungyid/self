@@ -1,4 +1,3 @@
-
 .title {
   display: flex;
   flex-flow: row nowrap;
@@ -8,14 +7,14 @@
 .navbar {
   display: block;
   margin-top: 3rem;
-  border-bottom: 2px solid #66CBC4;
+  border-bottom: 2px solid #66cbc4;
 }
 
 .navLink {
   font-size: 1.5rem;
   margin-right: 2rem;
   padding: 0.5rem;
-  color: var(--color)
+  color: var(--color);
 }
 
 .navLink:hover {
@@ -28,4 +27,34 @@
   color: var(--background);
   opacity: 0.5;
   font-size: 3rem;
+}
+
+button {
+  z-index: 1;
+  opacity: 0.75;
+  font-size: 4.75rem;
+  color: var(--color);
+  position: relative;
+}
+
+button::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 2.5rem;
+  height: 4.75rem;
+  transform: translateX(100%);
+  border: 2px solid var(--btn-green);
+  border-radius: 2px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+button.en::before {
+  transform: translateX(0);
 }

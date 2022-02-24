@@ -7,7 +7,7 @@ function WorkPage () {
 
   return (
     <div>
-      <WorkList project={resumeCtx.project} />  
+      <WorkList project={resumeCtx.data.project} />  
     </div>
   )
 }

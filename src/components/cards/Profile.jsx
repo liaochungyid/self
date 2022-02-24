@@ -32,7 +32,7 @@ function Profile(props) {
       <div className={classes.eduOrExp}>
         {props.education.concat(props.experience).map(item => <ProfileEduOrExpList item={item} key={item.order}/>)}
       </div>
-      <Link className={classes.navLink} to='/profile'>MORE...<FaPlay/></Link>
+      <Link className={classes.navLink} to='/self/profile'>MORE...<FaPlay/></Link>
     </div>
   )
 }

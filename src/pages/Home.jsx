@@ -11,14 +11,14 @@ function HomePage () {
 
   return (
     <section>
-      <Introduction link={resumeCtx.link}/>
-      <Skill skill={resumeCtx.skill} />
-      <Project project={resumeCtx.project.slice(0,2)} />  
+      <Introduction link={resumeCtx.data.link}/>
+      <Skill skill={resumeCtx.data.skill} />
+      <Project project={resumeCtx.data.project.slice(0,2)} />  
       <Profile 
-        education={resumeCtx.education} 
-        experience={resumeCtx.experience.related} 
-        selfIntro={resumeCtx.selfIntro}
-        resume={resumeCtx.resume}
+        education={resumeCtx.data.education} 
+        experience={resumeCtx.data.experience.related} 
+        selfIntro={resumeCtx.data.selfIntro}
+        resume={resumeCtx.data.resume}
       />
       <div className="homeFootImg">
         <img src="https://i.imgur.com/iG8QUx8.jpg" alt="foot image" />

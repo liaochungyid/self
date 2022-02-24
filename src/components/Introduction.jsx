@@ -1,5 +1,5 @@
-import classes from './introduction.module.css'
 import { FaPlay } from "react-icons/fa"
+import classes from './introduction.module.css'
 import SocialMediaLink from './SocialMediaLink'
 
 function Introduction(props) {

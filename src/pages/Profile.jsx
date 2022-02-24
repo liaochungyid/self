@@ -4,19 +4,19 @@ import ProfileList from "../components/cards/ProfileList"
 
 function ProfilePage () {
   const resumeCtx = useContext(ResumeContext)
-  const timeline = resumeCtx.education
-    .concat(resumeCtx.experience.irrelevant)
-    .concat(resumeCtx.experience.related)
+  const timeline = resumeCtx.data.education
+    .concat(resumeCtx.data.experience.irrelevant)
+    .concat(resumeCtx.data.experience.related)
     .sort((a,b) => a.order - b.order)
 
   return (
     <div>
       <ProfileList 
-        selfIntro={resumeCtx.selfIntro}
-        resume={resumeCtx.resume}
-        link={resumeCtx.link}
+        selfIntro={resumeCtx.data.selfIntro}
+        resume={resumeCtx.data.resume}
+        link={resumeCtx.data.link}
         timeline={timeline} 
-        skill={resumeCtx.skill}
+        skill={resumeCtx.data.skill}
       />  
     </div>
   )

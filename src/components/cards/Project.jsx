@@ -30,7 +30,7 @@ function Project(props) {
   return (
     <div className={classes.project}>
       {props.project.map(item => <ProjectCard item={item} key={item.name}/>)}
-      <Link className={classes.navLink} to='/work'>MORE...<FaPlay/></Link>
+      <Link className={classes.navLink} to='/self/work'>MORE...<FaPlay/></Link>
     </div>
   )
 }
